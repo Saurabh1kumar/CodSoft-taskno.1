@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 7%;
+    background-color: lightgrey;
+    position: fixed;
+    box-shadow: 0px 3px 20px 1px rgba(87, 85, 85, 0.712);
+    z-index: 99;
+}
+.logo{
+    width: 120px;
+    margin-right: auto;
+    cursor: pointer;
+    
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    color: white;
+    text-decoration: none; 
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #2e2f30;
+    
+}
+
+
+/* slider */
+.container{
+    padding-top: 63px;
+}
+.slider{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 86%;
+    margin: auto;
+    /* margin-top: 2px; */
+   /* border: 2px solid black; */
+}
+.slider figure{
+    width: 400%;
+    position: relative;
+    animation: animate 10s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.slider figure img{
+    width: 25%;
+    float: left;
+    height: 500px;
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+    width: 86%;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 2px rgba(87, 85, 85, 0.712);
+}
+.book img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    border: 10px solid rgb(245, 235, 235);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.book1 {
+    margin-right: 20px;
+}
+
+.text-box p{
+    font-size: 16px;
+    margin: 5px;
+}
+button{
+    margin: 20px;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    
+}
+button:active{
+    transform: scale(0.96);
+}
+
+     /* course1 */
+
+.header{
+    text-align: center;
+    margin: 30px;
+    color: blue ;
+}
+.course{
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+    width: 86%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px 2px rgba(87, 85, 85, 0.712);
+}
+
+.course img{
+    float: left;
+    width: 492.7px;
+    height: 255.9px;
+    border: 15px solid rgb(245, 235, 235);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-box1 h1{
+    padding: 10px;
+}
+.text-box1 p{
+    letter-spacing: 1px;
+}
+.text-box1 {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.text-box2 h1{
+    padding: 10px;
+}
+.text-box2 p{
+    letter-spacing: 1px;
+}
+.text-box2 {
+    margin-right: 50px;
+    padding-left: 10px;
+} 
+
+    /* footer */
+
+.main-footer{
+    margin-top: 10px;
+    width: 100%;
+    padding: 25px 7%;
+    background-color: #fff;
+    /* color: #f2f3f4; */
+    display: flex;
+}
+footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+footer h3{
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+.col-2 p{
+    width: 400px;
+    height: 45px;
+    margin-left: 220px;
+    margin-top: 25px;
+}
+.Copyright{
+    padding: 20px;
+    background-color: #fff;
+}
